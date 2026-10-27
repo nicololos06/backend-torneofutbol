@@ -1,0 +1,30 @@
+{
+  "name": "torneo-don-bosco-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "API REST del Torneo Don Bosco - TP final Backend",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "seed": "node scripts/seed.js",
+    "demo": "node scripts/demo.js",
+    "test": "node --test --test-concurrency=1 test/*.test.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.0.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.3.0",
+    "supertest": "^7.1.0"
+  }
+}
